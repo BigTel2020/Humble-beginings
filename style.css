@@ -97,6 +97,36 @@ header img {
   color: fff;
   font-size: 40px;
   position: absolute;
-  bottom: 100px;
+  bottom: 0px;
   transform: translate(-50%, -50%);
+}
+/* grid layout */
+.grid-layout-50 > div {
+  border: 1px solid red;
+  padding: 8px;
+  /* margin: 10px; */
+}
+.grid-layout-50 {
+  height: 500px;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-gap: 1em;
+  justify-items: stretch;
+  align-items: stretch;
+}
+.title {
+  grid-column: 1 / 3;
+  grid-row: 1 / 3;
+}
+.header {
+  grid-column: 3;
+  grid-row: 1 / 3;
+}
+.sidebar {
+  grid-column: 2 / 4;
+  grid-row: 3;
+}
+.content {
+}
+.footer {
 }
