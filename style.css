@@ -2,5 +2,17 @@
   padding: 0;
   margin: 0;
   box-sizing: border-box;
-  text-decoration: none;
+}
+/* zoom in effect */
+.hvrbox-zoom {
+  position: relative;
+  margin: auto;
+  overflow: hidden;
+}
+.hvrbox-zoom img {
+  transition: all 2s;
+  transform: scale(1);
+}
+.hvrbox-zoom:hover img {
+  transform: scale(1.9);
 }
